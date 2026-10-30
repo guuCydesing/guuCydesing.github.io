@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guilherme Cyrillo – Portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F5F7; --surface:#FFFFFF; --ink:#14202B; --muted:#53606C; --line:#D5DCE2;
+  --accent:#0E7C86; --accent-ink:#FFFFFF; --warn:#8A5A00; --warn-bg:#FBF0D9;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#101A22; --surface:#17232D; --ink:#E8EEF2; --muted:#9FB0BC; --line:#2B3B47;
+    --accent:#4FC3CE; --accent-ink:#0B1419; --warn:#F2C66B; --warn-bg:#33290F; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101A22; --surface:#17232D; --ink:#E8EEF2; --muted:#9FB0BC; --line:#2B3B47;
+  --accent:#4FC3CE; --accent-ink:#0B1419; --warn:#F2C66B; --warn-bg:#33290F; color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 72px}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.15;margin:0}
+h1{font-size:clamp(2.2rem,8vw,3.4rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:1.6rem;font-weight:700;margin:56px 0 6px}
+h3{font-size:1.15rem;font-weight:500}
+p{margin:0 0 12px;max-width:62ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.lead{font-size:1.2rem;color:var(--muted);margin-top:14px}
+.notice{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:12px 14px;font-size:.95rem;margin-bottom:32px}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:500}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.sub{color:var(--muted);margin-bottom:18px}
+.row{border-top:1px solid var(--line);padding:18px 0}
+.row:last-child{border-bottom:1px solid var(--line)}
+.head{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:baseline;justify-content:space-between}
+.chip{font-size:.85rem;padding:2px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chip.ok{border-color:var(--accent);color:var(--accent)}
+.chip.todo{border-color:var(--warn);color:var(--warn)}
+.row p{color:var(--muted);margin:6px 0 0}
+.slot{border:2px dashed var(--line);border-radius:10px;padding:16px;margin-top:12px;background:var(--surface)}
+.slot dl{margin:10px 0 0;display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;font-size:.95rem}
+.slot dt{color:var(--muted)}
+.slot dd{margin:0}
+.slot .fill{color:var(--warn)}
+.check{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+.check:last-of-type{border-bottom:1px solid var(--line)}
+.check input{width:20px;height:20px;margin-top:4px;accent-color:var(--accent)}
+.check label{cursor:pointer}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:12px 0}
+.bar span{display:block;height:100%;width:0;background:var(--accent);transition:width .25s}
+.tools{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:12px 0 0;list-style:none}
+.tools li{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:4px 12px;font-size:.95rem}
+@media (prefers-reduced-motion:reduce){.bar span{transition:none}}
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Guilherme Cyrillo</h1>
+  <p class="lead">Estudante de Análise e Desenvolvimento de Sistemas no Senac. Aprendo programação na prática e estou construindo meus primeiros projetos com IA.</p>
+  <div class="links">
+    <a class="btn primary" href="https://github.com/guuCydesing">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/guilherme-cyrillo-55236a3a4">LinkedIn</a>
+  </div>
+
+  <h2>Sobre mim</h2>
+  <p>Comecei a faculdade no meio de 2026 e termino no fim de 2028. Já pratiquei lógica de programação em Java e estou aprendendo Python. Uso este portfólio para mostrar o que já fiz e o que estou construindo,.</p>
+  <ul class="tools" aria-label="Tecnologias">
+    <li>Java</li><li>Python</li><li>MySQL</li><li>GitHub</li>
+  </ul>
+
+  <h2>Projetos de programação</h2>
+  <p class="sub">O que já está publicado.</p>
+  <div class="row">
+    <div class="head"><h3>Lógica de programação em Java</h3><span class="chip ok">Publicado</span></div>
+    <p>Mais de 20 exercícios feitos em Java no NetBeans, sobre condicionais, laços, vetores e métodos.</p>
+    <p><a href="https://github.com/guuCydesing/java-github">Ver o repositório</a></p>
+  </div>
+  <div class="row">
+    <div class="head"><h3>Projetos em Python</h3><span class="chip todo">Em construção</span></div>
+    <p>Repositório novo, com exercícios e pequenos programas.</p>
+  </div>
+
+  <h2>Projetos com IA</h2>
+  <p class="sub">Estou começando a construir com IA. Cada projeto entra aqui quando estiver publicado.</p>
+  <div class="row">
+    <div class="head"><h3>Próximos passos</h3><span class="chip todo">Em andamento</span></div>
+    <p>Minha primeira automação com IA, uma ferramenta feita com vibe coding e um agente simples de perguntas e respostas.</p>
+  </div>
+
+  <h2>Contato</h2>
+  <p>Vamos conversar pelo <a href="https://www.linkedin.com/in/guilherme-cyrillo-55236a3a4">LinkedIn</a> ou ver meu código no <a href="https://github.com/guuCydesing">GitHub</a>.</p>
+</main>
+</body>
+</html>
